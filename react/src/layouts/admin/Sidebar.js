@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
     return (
-        <nav className="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+        <nav className="sb-sidenav accordion sb-sidenav-white isNavOpen" id="sidenavAccordion">
             <div className="sb-sidenav-menu">
                 <div className="nav">
                     <div className="sb-sidenav-menu-heading">Core</div>
@@ -13,23 +13,23 @@ const Sidebar = () => {
                     </Link>
                     <Link className="nav-link" to="/admin/add-category">
                         <div className="sb-nav-link-icon"><i className="fas fa-tachometer-alt"></i></div>
-                        Add Category
+                        Add Food Category
                     </Link>
                     <Link className="nav-link" to="/admin/view-category">
                         <div className="sb-nav-link-icon"><i className="fas fa-tachometer-alt"></i></div>
-                        View Category
+                        View Food Category
                     </Link>
 
 
                     <Link className="nav-link collapsed" to="#" data-bs-toggle="collapse" data-bs-target="#collapseProduct" aria-expanded="false" aria-controls="collapseProduct">
                         <div className="sb-nav-link-icon"><i className="fas fa-columns"></i></div>
-                        Products
+                        Food Items
                         <div className="sb-sidenav-collapse-arrow"><i className="fas fa-angle-down"></i></div>
                     </Link>
                     <div className="Show" id="ShowProduct" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                         <nav className="sb-sidenav-menu-nested nav">
-                            <Link className="nav-link" to="/admin/add-product">Add Product</Link>
-                            <Link className="nav-link" to="/admin/view-product">View Product</Link>
+                            <Link className="nav-link" to="/admin/add-product">Add Food Items</Link>
+                            <Link className="nav-link" to="/admin/view-product">View Food Items</Link>
                         </nav>
                     </div>
 
@@ -87,10 +87,7 @@ const Sidebar = () => {
                     </Link>
                 </div>
             </div>
-            <div className="sb-sidenav-footer">
-                <div className="small">Logged in as:</div>
-                Poshak Sewa
-            </div>
+
         </nav>
     );
 }
